@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Accelerometer TextView -->
+    <TextView
+        android:id="@+id/accelerometer_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accelerometer Data"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <!-- Gravity TextView -->
+    <TextView
+        android:id="@+id/gravity_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gravity Data"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/accelerometer_textview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp" />
+
+    <!-- Gyroscope TextView -->
+    <TextView
+        android:id="@+id/gyroscope_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gyroscope Data"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/gravity_textview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp" />
+
+    <!-- Linear Acceleration TextView -->
+    <TextView
+        android:id="@+id/linear_acceleration_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Linear Acceleration Data"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/gyroscope_textview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp" />
+
+    <!-- Rotation Vector TextView -->
+    <TextView
+        android:id="@+id/rotation_vector_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rotation Vector Data"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/linear_acceleration_textview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
